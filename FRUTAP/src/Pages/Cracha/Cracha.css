@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap");
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Impede rolagem */
+  user-select: none; /* Impede seleção de texto */
+  touch-action: none; /* Impede zoom */
+  background-color: #001355;
+  font-family: "EB Garamond", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1080px;
+  height: 1920px;
+  background-color: #001355;
+  color: white;
+}
+
+.title {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cracha-input {
+  padding: 15px;
+  font-size: 24px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  width: 300px;
+  text-align: center;
+}
+
+.botao-entrar {
+  padding: 15px 20px;
+  font-size: 24px;
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.botao-entrar:hover {
+  background-color: #ffdd44;
+}
+
+.welcome-message {
+  font-size: 32px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #ffcc00;
+}

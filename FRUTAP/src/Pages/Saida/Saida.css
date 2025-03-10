@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap");
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Impede rolagem */
+  user-select: none; /* Impede seleção de texto */
+  touch-action: none; /* Impede zoom */
+  background-color: #001355;
+  font-family: "EB Garamond", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../public/restscreen1.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px; /* 🔥 Aumenta o espaçamento entre os checkboxes */
+  margin-top: 50px;
+}
+
+.checkbox-container label {
+  font-size: 3rem; /* 🔥 Aumenta o tamanho do texto */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.checkbox-container input[type="checkbox"] {
+  width: 40px;  /* 🔥 Aumenta o tamanho da caixa */
+  height: 40px; /* 🔥 Aumenta o tamanho da caixa */
+}
+
+.botao-confirmar {
+  margin-top: 50px;
+  padding: 20px 50px;
+  font-size: 3rem;
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.botao-confirmar:hover {
+  background-color: #ffdd44;
+}
+
+/* 🔥 Ajustes para telas maiores */
+@media (min-width: 2000px) {
+  .title {
+    font-size: 7rem;
+  }
+  .text {
+    font-size: 5rem;
+  }
+  .checkbox-container {
+    gap: 60px;
+  }
+  .checkbox-container label {
+    font-size: 4rem;
+  }
+  .checkbox-container input[type="checkbox"] {
+    width: 50px;
+    height: 50px;
+  }
+  .botao-confirmar {
+    font-size: 4rem;
+    padding: 30px 60px;
+  }
+}

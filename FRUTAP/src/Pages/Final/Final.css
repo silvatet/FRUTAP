@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap");
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  user-select: none;
+  touch-action: none;
+  background-color: #001355;
+  font-family: "EB Garamond", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.final-text {
+  font-size: 3rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Ajustes para telas maiores */
+@media (min-width: 2000px) {
+  .title {
+    font-size: 7rem;
+  }
+  .final-text {
+    font-size: 5rem;
+  }
+}
